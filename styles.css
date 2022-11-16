@@ -1,0 +1,111 @@
+body {
+    background-color: #202020;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-decoration: none;
+    margin: 22px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+h1, h3, footer {
+    color: whitesmoke;
+    font-family: Montserrat;
+}
+
+h3 {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    margin: 0 0 0 auto;
+    padding: 15px;
+}
+
+#projects-grid {
+    width: auto;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 20px;
+}
+
+.project-tile {
+    margin: 3px;
+}
+
+#profile-link {
+    margin: 20px;
+}
+
+#email-address {
+    margin: 20px;
+}
+
+#contact h1 {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+    #projects-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1300px) {
+    #projects-grid {
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 200px 200px;
+    }
+}
